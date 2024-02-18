@@ -1,0 +1,47 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+    
+    #main {
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h1 {
+        color: rgb(255, 255, 255);
+        position: absolute;
+        font-size: 100px;
+        font-family: poppins;
+    }
+    
+    #circle {
+        height: 50px;
+        width: 50px;
+        background-color: rgb(255, 254, 252);
+        position: absolute;
+        mix-blend-mode: difference;
+        border-radius: 50%;
+        z-index: 999;
+        transition: all linear .2s;
+    }
+    
+    @keyframes bounce {
+        from {
+            transform: scale(1);
+        }
+        to {
+            transform: scale(0.5);
+        }
+    }
